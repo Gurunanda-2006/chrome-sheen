@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/gurunanda-profile.png';
 
 const HeroSection = () => {
   return (
@@ -48,6 +48,10 @@ const HeroSection = () => {
                 src={profilePhoto}
                 alt="Gurunanda - AI Enthusiast"
                 className="relative w-full h-full rounded-full object-cover border-4 border-background floating-shadow"
+                onError={(e) => {
+                  console.error('Failed to load profile image');
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </div>
             
