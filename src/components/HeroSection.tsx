@@ -10,31 +10,31 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         {/* Animated Title Words */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           {/* Designer - Top Left */}
-          <div className="absolute -top-20 -left-40 md:-top-32 md:-left-60">
-            <h2 className="text-3xl md:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform -rotate-12">
+          <div className="absolute -top-16 -left-32 md:-top-24 md:-left-48 lg:-top-32 lg:-left-64">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform -rotate-12">
               Designer
             </h2>
           </div>
           
           {/* Automator - Bottom Left */}
-          <div className="absolute -bottom-20 -left-40 md:-bottom-32 md:-left-60">
-            <h2 className="text-3xl md:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform rotate-12">
+          <div className="absolute -bottom-16 -left-32 md:-bottom-24 md:-left-48 lg:-bottom-32 lg:-left-64">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform rotate-12">
               Automator
             </h2>
           </div>
           
           {/* Web Developer - Top Right */}
-          <div className="absolute -top-20 -right-40 md:-top-32 md:-right-60">
-            <h2 className="text-3xl md:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform rotate-12">
+          <div className="absolute -top-16 -right-32 md:-top-24 md:-right-48 lg:-top-32 lg:-right-64">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform rotate-12">
               Web Developer
             </h2>
           </div>
           
           {/* Coder - Bottom Right */}
-          <div className="absolute -bottom-20 -right-40 md:-bottom-32 md:-right-60">
-            <h2 className="text-3xl md:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform -rotate-12">
+          <div className="absolute -bottom-16 -right-32 md:-bottom-24 md:-right-48 lg:-bottom-32 lg:-right-64">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-poppins italic text-muted-foreground parallax-drift opacity-80 transform -rotate-12">
               Coder
             </h2>
           </div>
