@@ -169,10 +169,6 @@
     animation: breathing 3s ease-in-out infinite;
   }
   
-  .pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
-  }
-  
   .matrix-bg {
     background: var(--dark-gradient);
     position: relative;
@@ -242,15 +238,6 @@
 @keyframes breathing {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { 
-    box-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.5);
-  }
-  50% {
-    box-shadow: 0 0 30px hsl(var(--neon-cyan) / 0.8);
-  }
 }
 
 @keyframes matrix-drift {

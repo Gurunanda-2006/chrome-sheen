@@ -70,7 +70,7 @@ const AchievementsSection = () => {
           }`}>
             Achievements
           </h2>
-          <div className="w-24 h-1 bg-neon mx-auto rounded-full animate-pulse" />
+          <div className="w-24 h-1 bg-neon mx-auto rounded-full" />
         </div>
 
         {/* Achievement Cards */}

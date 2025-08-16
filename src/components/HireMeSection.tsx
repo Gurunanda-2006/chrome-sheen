@@ -108,9 +108,9 @@ const HireMeSection = () => {
               
               {/* Decorative Elements */}
               <div className="flex justify-center md:justify-start space-x-4 mt-8">
-                <div className="w-12 h-1 bg-neon rounded-full animate-pulse" />
-                <div className="w-8 h-1 bg-electric rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-                <div className="w-6 h-1 bg-magenta rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
+                <div className="w-12 h-1 bg-neon rounded-full" />
+                <div className="w-8 h-1 bg-electric rounded-full" />
+                <div className="w-6 h-1 bg-magenta rounded-full" />
               </div>
             </div>
           </div>

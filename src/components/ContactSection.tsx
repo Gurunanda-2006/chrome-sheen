@@ -161,7 +161,7 @@ const ContactSection = () => {
                 Send Message
               </Button>
             </div>
-          </form>
+          <div className="w-64 h-px bg-gradient-to-r from-transparent via-neon to-transparent" />
         </div>
       </div>
     </section>
