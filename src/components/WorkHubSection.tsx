@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Code, Palette, Bot } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const WorkHubSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,25 +31,30 @@ const WorkHubSection = () => {
     }
   };
 
+  const handleWebDevelopmentClick = () => {
+    // Navigate to web development projects page using React Router
+    navigate('/web-development-projects');
+  };
+
   const workItems = [
     {
       title: 'Web Development',
       icon: Code,
-      targetSection: 'experience',
+      onClick: handleWebDevelopmentClick,
       delay: '0s',
       color: 'neon'
     },
     {
       title: 'Designing',
       icon: Palette,
-      targetSection: 'achievements',
+      onClick: () => scrollToSection('achievements'),
       delay: '0.2s',
       color: 'magenta'
     },
     {
       title: 'Automations',
       icon: Bot,
-      targetSection: 'contact',
+      onClick: () => scrollToSection('contact'),
       delay: '0.4s',
       color: 'electric'
     }
@@ -81,7 +88,7 @@ const WorkHubSection = () => {
                   key={item.title}
                   className={`group cursor-pointer ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
                   style={{ animationDelay: item.delay }}
-                  onClick={() => scrollToSection(item.targetSection)}
+                  onClick={item.onClick}
                 >
                   <div className="dark-glass-effect rounded-2xl p-8 md:p-12 transition-all duration-500 hover:scale-105 hover:rotate-1 breathing group-hover:neon-glow">
                     <div className="flex flex-col items-center space-y-6">
